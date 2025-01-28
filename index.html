@@ -9,25 +9,43 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden; /* Prevent scrolling */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
     }
 
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
+    .redirect-message {
+      text-align: center;
+      color: #333;
+    }
+
+    .redirect-message a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .redirect-message a:hover {
+      text-decoration: underline;
     }
   </style>
+  <script>
+    // Automatically redirect to the Apps Script web app
+    window.onload = function() {
+      const url = "https://script.google.com/macros/s/AKfycbwI8zmtxsgpuTfUkAYWcD88AWaXLNPK7vdrIl_LIsJnTXBWw--Iggi3r5avp1v8A0RAeQ/exec";
+      window.location.href = url;
+    };
+  </script>
 </head>
 <body>
-  <iframe 
-    src="https://script.google.com/macros/s/AKfycbwI8zmtxsgpuTfUkAYWcD88AWaXLNPK7vdrIl_LIsJnTXBWw--Iggi3r5avp1v8A0RAeQ/exec"
-    allowfullscreen="true">
-  </iframe>
+  <div class="redirect-message">
+    <h1>Redirecting to Esperanza Store...</h1>
+    <p>If you are not redirected, <a href="https://script.google.com/macros/s/AKfycbwI8zmtxsgpuTfUkAYWcD88AWaXLNPK7vdrIl_LIsJnTXBWw--Iggi3r5avp1v8A0RAeQ/exec">click here</a>.</p>
+  </div>
 </body>
 </html>
+
 
   
